@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Szenen/YasminDummyPathSystem.unity
+- path: Assets/Szenen/YasminDummyPathFinding.unity
   isLoaded: 1
   isActive: 1
