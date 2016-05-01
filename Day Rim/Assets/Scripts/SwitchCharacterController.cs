@@ -33,11 +33,17 @@ public class SwitchCharacterController : MonoBehaviour
         {
             felix.activeCharacter = false;
             ActiveCharacter.activeCharacter = feliGameObject;
+
+            felixGameObject.tag = "NPC";
+            feliGameObject.tag = "ActiveCharacter";
         }
         else if (felix.activeCharacter)
         {
             feli.activeCharacter = false;
             ActiveCharacter.activeCharacter = felixGameObject;
+
+            feliGameObject.tag = "NPC";
+            felixGameObject.tag = "ActiveCharacter";
         }
     }
 }
