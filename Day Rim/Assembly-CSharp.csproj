@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ActiveCharacter.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\DialogSceneManager.cs" />
      <Compile Include="Assets\Scripts\InteractionDialog.cs" />
      <Compile Include="Assets\Scripts\MoveCharacterController.cs" />
      <Compile Include="Assets\Scripts\PlayerCharacterController.cs" />
