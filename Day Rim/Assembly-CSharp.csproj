@@ -46,9 +46,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ActiveCharacter.cs" />
+     <Compile Include="Assets\Scripts\ActiveGameMode.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\DialogSceneManager.cs" />
-     <Compile Include="Assets\Scripts\InteractionDialog.cs" />
+     <Compile Include="Assets\Scripts\ItemSingleInteraction.cs" />
+     <Compile Include="Assets\Scripts\LookAtDialogManager.cs" />
      <Compile Include="Assets\Scripts\MoveCharacterController.cs" />
      <Compile Include="Assets\Scripts\PlayerCharacterController.cs" />
      <Compile Include="Assets\Scripts\SwitchCharacterController.cs" />
