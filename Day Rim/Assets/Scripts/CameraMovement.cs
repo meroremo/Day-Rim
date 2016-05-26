@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CameraMovement : MonoBehaviour {
+public class CameraMovement1 : MonoBehaviour {
 
 	public bool orientation = false;
 	//private DeviceOrientation lastOrientation;

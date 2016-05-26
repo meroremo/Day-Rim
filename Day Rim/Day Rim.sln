@@ -1,7 +1,7 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day Rim.CSharp", "Day Rim.CSharp.csproj", "{FCB6158D-EDCD-A540-31E7-BA0407433A39}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{0A211FF1-1478-84C4-917B-F26B4B531078}") = "Day Rim", "Assembly-CSharp.csproj", "{0B32D868-5108-FA52-5E32-D372FCEC920B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +9,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FCB6158D-EDCD-A540-31E7-BA0407433A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FCB6158D-EDCD-A540-31E7-BA0407433A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FCB6158D-EDCD-A540-31E7-BA0407433A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FCB6158D-EDCD-A540-31E7-BA0407433A39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B32D868-5108-FA52-5E32-D372FCEC920B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B32D868-5108-FA52-5E32-D372FCEC920B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B32D868-5108-FA52-5E32-D372FCEC920B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B32D868-5108-FA52-5E32-D372FCEC920B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

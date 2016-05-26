@@ -49,9 +49,15 @@
      <Compile Include="Assets\Scripts\ActiveGameMode.cs" />
      <Compile Include="Assets\Scripts\BackgroundMusicManager.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\Dialog\Dialog_Navigation.cs" />
      <Compile Include="Assets\Scripts\DialogSceneManager.cs" />
+     <Compile Include="Assets\Scripts\Game\CanvasNavigator.cs" />
+     <Compile Include="Assets\Scripts\Game\DetectTouches.cs" />
+     <Compile Include="Assets\Scripts\Game\VanessaCameraMovement.cs" />
      <Compile Include="Assets\Scripts\ItemSingleInteraction.cs" />
      <Compile Include="Assets\Scripts\LookAtDialogManager.cs" />
+     <Compile Include="Assets\Scripts\Menu\AnimationRobo.cs" />
+     <Compile Include="Assets\Scripts\Menu\NavigationMenu.cs" />
      <Compile Include="Assets\Scripts\MoveCharacterController.cs" />
      <Compile Include="Assets\Scripts\MusicPlayingController.cs" />
      <Compile Include="Assets\Scripts\PlayerCharacterController.cs" />
