@@ -7,14 +7,25 @@ public class CameraMovement : MonoBehaviour {
 	//private DeviceOrientation lastOrientation;
 	private DeviceOrientation currentOrientation;
 	public Camera cam;
-	public GameObject back;
+	public GameObject player;
+
+
+	public bool moved = false;
+	// startposition von der die drehung und kameraverschiebung ausgeht
+	public Vector3 startPosition;
 
 
 	// Use this for initialization
 	void Start () {
-
+		
 		//lastOrientation = Input.deviceOrientation;
 		currentOrientation = Input.deviceOrientation;
+
+		//beim start der scene wird anfangsort festgestellt.
+
+		//To-DO: GO auf ActiveCharacter setten
+		startPosition = GameObject.FindGameObjectWithTag ("Player").transform.position;
+		//Debug.Log (startPosition.x + " "+ startPosition.y + " "+ startPosition.z + " " );
 
 	}
 
@@ -25,17 +36,75 @@ public class CameraMovement : MonoBehaviour {
 		DeviceOrientation devOr = Input.deviceOrientation;
 
 
+			
+
 		//Wenn das erfüllt ist darf gedreht werden
 		if (devOr != DeviceOrientation.Unknown && orientation == true && devOr != currentOrientation)
 		{
 
+			float x = 0;
+			float y = 0;
 
 			if (devOr == DeviceOrientation.Portrait)
 			{				
 				if(currentOrientation == DeviceOrientation.LandscapeRight)
 				{
 					cam.transform.Rotate(new Vector3(0,0,90));
-					cam.transform.position = (new Vector3(0,0,-10));
+					//cam.transform.position = (new Vector3(0,0,-10));
+
+					// wenn player zu weit nach links
+					if (player.transform.position.x < -4.0f) {
+
+						x = -4;
+						y = 0 + (player.transform.position.y - startPosition.y);
+
+						//cam.transform.position = new Vector3 (0 + -4, 
+						//	0 + (player.transform.position.y - startPosition.y),
+						//	cam.transform.position.z);
+					
+					} 
+					// wenn active player zu weit nach rechts
+					else if (player.transform.position.x > 4.0f) {
+
+						x = 4;
+						y = 0;
+
+						//cam.transform.position = new Vector3 (0 + 4, 
+						//	0 + (player.transform.position.y - startPosition.y),
+						//	cam.transform.position.z);
+
+					}
+					//player is between borders?! 
+					else
+					{
+
+						x = 0 + (player.transform.position.x - startPosition.x); 
+						y = 0 + (player.transform.position.y - startPosition.y);
+
+					}
+
+					if (player.transform.position.y < -4.0f) {
+
+						//x = 0;
+						y = -4;
+
+					} 
+					// wenn active player zu weit nach oben
+					else if (player.transform.position.y > 4.0f) {
+
+						//x = 0;
+						y = 4;
+					}
+					//player is between borders?! 
+					else
+					{
+						//x = 0;
+						y = -7.0f + (player.transform.position.y - startPosition.y);
+
+
+					}
+
+					cam.transform.position = new Vector3 (x, y, cam.transform.position.z);
 				}
 
 				currentOrientation = DeviceOrientation.Portrait;
@@ -48,7 +117,83 @@ public class CameraMovement : MonoBehaviour {
 				if(currentOrientation == DeviceOrientation.Portrait)
 				{
 					cam.transform.Rotate(new Vector3(0,0,-90));
-					cam.transform.position = (new Vector3(0,-6,-10));
+					//cam.transform.position = (new Vector3(0,-4,-10));
+
+					//cam.transform.position = new Vector3(	0, 
+					//	-4.0f +(player.transform.position.y - startPosition.y),
+					//	cam.transform.position.z	);
+
+					// wenn active char zu weit nach unten
+					if (player.transform.position.y < -4.0f) {
+
+						x = 0;
+						y = -4;
+
+					//	cam.transform.position = new Vector3 (0, 
+					//		-4,
+					//		cam.transform.position.z);
+
+					} 
+					// wenn active player zu weit nach oben
+					else if (player.transform.position.y > 4.0f) {
+
+						x = 0;
+						y = 4;
+
+						//cam.transform.position = new Vector3 (0 , 
+						//	4,
+						//	cam.transform.position.z);
+
+					}
+					//player is between borders?! 
+					else
+					{
+						x = 0;
+						y = -7.0f + (player.transform.position.y - startPosition.y);
+
+
+					}
+
+
+
+					if (player.transform.position.x < -4.0f) {
+						x = -4;
+						//y = 0 + (player.transform.position.y - startPosition.y);
+					} 
+					// wenn active player zu weit nach rechts
+					else if (player.transform.position.x > 4.0f) {
+						x = 4;
+						//y = 0;
+					}
+					//player is between borders?! 
+					else
+					{
+						x = 0 + (player.transform.position.x - startPosition.x); 
+						//y = 0 + (player.transform.position.y - startPosition.y);
+					}
+
+					if (player.transform.position.y < -4.0f) {
+
+						//x = 0;
+						y = -4;
+
+					} 
+					// wenn active player zu weit nach oben
+					else if (player.transform.position.y > 4.0f) {
+
+						//x = 0;
+						y = 4;
+					}
+					//player is between borders?! 
+					else
+					{
+						//x = 0;
+						y = -7.0f + (player.transform.position.y - startPosition.y);
+
+
+					}
+				
+					cam.transform.position = new Vector3 (x, y, cam.transform.position.z);
 				}
 
 				currentOrientation = DeviceOrientation.LandscapeRight;
@@ -66,8 +211,111 @@ public class CameraMovement : MonoBehaviour {
 		}
 
 
+		if(currentOrientation == DeviceOrientation.LandscapeRight)
+		{
+
+		
+			float x = 0;
+			float y = 0;
+
+			// wenn active char zu weit nach unten
+			if (player.transform.position.y < -4.0f) {
+
+				x = 0;
+				y = -4;
+
+			} 
+			// wenn active player zu weit nach oben
+			else if (player.transform.position.y > 4.0f) {
+
+				x = 0;
+				y = 4;
 
 
+
+			}
+			//player is between borders?! 
+			else
+			{
+				x = 0;
+				y = -7.0f + (player.transform.position.y - startPosition.y);
+
+
+			}
+		
+
+			if (player.transform.position.y < -4.0f) {
+
+				//x = 0;
+				y = -4;
+
+			} 
+			// wenn active player zu weit nach oben
+			else if (player.transform.position.y > 4.0f) {
+
+				//x = 0;
+				y = 4;
+			}
+			//player is between borders?! 
+			else
+			{
+				//x = 0;
+				y = -7.0f + (player.transform.position.y - startPosition.y);
+
+
+			}
+
+			cam.transform.position = new Vector3 (x, y, cam.transform.position.z);
+
+		}
+		else if(currentOrientation == DeviceOrientation.Portrait)
+		{
+
+
+			float x = 0;
+			float y = 0;
+
+
+			if (player.transform.position.y < -4.0f) {
+				x = 0;
+				y = 0;
+			} 
+			// wenn active player zu weit nach oben
+			else if (player.transform.position.y > 4.0f) {
+				x = 0;
+				y = 0;
+			}
+			//player is between borders?! 
+			else
+			{
+				x = 0;
+				//y = -7.0f + (player.transform.position.y - startPosition.y);
+				y = 0;
+			}
+
+
+
+			if (player.transform.position.x < -4.0f) {
+				x = -4;
+				//y = 0 + (player.transform.position.y - startPosition.y);
+			} 
+			// wenn active player zu weit nach rechts
+			else if (player.transform.position.x > 4.0f) {
+				x = 4;
+				//y = 0;
+			}
+			//player is between borders?! 
+			else
+			{
+				x = 0 + (player.transform.position.x - startPosition.x); 
+				//y = 0 + (player.transform.position.y - startPosition.y);
+			}
+
+
+
+			cam.transform.position = new Vector3 (x, y, cam.transform.position.z);
+
+		}
 
 
 
