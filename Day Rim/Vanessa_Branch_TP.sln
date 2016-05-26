@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vanessa_Branch_TP.CSharp", "Vanessa_Branch_TP.CSharp.csproj", "{C2DDFB3A-E376-C33B-2419-65C46CAD4C4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2DDFB3A-E376-C33B-2419-65C46CAD4C4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DDFB3A-E376-C33B-2419-65C46CAD4C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DDFB3A-E376-C33B-2419-65C46CAD4C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DDFB3A-E376-C33B-2419-65C46CAD4C4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
