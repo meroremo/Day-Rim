@@ -21,6 +21,7 @@ public class BackgroundMusicManager : MonoBehaviour
         musicPlaying = GetComponent<MusicPlayingController>();
 
         string currentSceneName = SceneManager.GetActiveScene().name;
+
         if (currentSceneName == SceneNameManager.junkyardFirst || currentSceneName == SceneNameManager.junkyardSecond || currentSceneName == SceneNameManager.dialog)
         {
             if (!musicPlaying.junkyardMusicPlaying)

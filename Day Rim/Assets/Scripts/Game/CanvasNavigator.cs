@@ -7,15 +7,10 @@ public class CanvasNavigator : MonoBehaviour {
     private Animation inventar;
     public GameObject Inventar_Panel;
 
-    // Use this for initialization
-    void Start () {
+    void Start () 
+    {
         inventar = Inventar_Panel.GetComponent<Animation>();
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
     public void OpenDialog()
     {
@@ -23,14 +18,13 @@ public class CanvasNavigator : MonoBehaviour {
         {
             inventar.Play("Inventar_IN");
             inventar_isActive = true;
-            //hier in GameMode Inventar wechseln
-
+            ActiveGameMode.GAMEMODE = ActiveGameMode.GameModes.INVENTORY;
         }
         else
         {
             inventar.Play("Inventar_OUT");
             inventar_isActive = false;
-            //hier in GameMode INGame wechseln
+            ActiveGameMode.GAMEMODE = ActiveGameMode.GameModes.INGAME;
         }
     }
 }

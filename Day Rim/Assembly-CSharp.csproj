@@ -45,25 +45,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\ActiveCharacter.cs" />
-     <Compile Include="Assets\Scripts\ActiveGameMode.cs" />
-     <Compile Include="Assets\Scripts\BackgroundMusicManager.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\Dialog\DialogSceneManager.cs" />
      <Compile Include="Assets\Scripts\Dialog\Dialog_Navigation.cs" />
-     <Compile Include="Assets\Scripts\DialogSceneManager.cs" />
+     <Compile Include="Assets\Scripts\Game\ActiveCharacter.cs" />
+     <Compile Include="Assets\Scripts\Game\ActiveGameMode.cs" />
+     <Compile Include="Assets\Scripts\Game\BackgroundMusicManager.cs" />
      <Compile Include="Assets\Scripts\Game\CanvasNavigator.cs" />
      <Compile Include="Assets\Scripts\Game\DetectTouches.cs" />
+     <Compile Include="Assets\Scripts\Game\ItemSingleInteraction.cs" />
+     <Compile Include="Assets\Scripts\Game\LookAtDialogManager.cs" />
+     <Compile Include="Assets\Scripts\Game\MoveCharacterController.cs" />
+     <Compile Include="Assets\Scripts\Game\MusicPlayingController.cs" />
+     <Compile Include="Assets\Scripts\Game\PlayerCharacterController.cs" />
+     <Compile Include="Assets\Scripts\Game\SceneNameManager.cs" />
+     <Compile Include="Assets\Scripts\Game\SwitchCharacterController.cs" />
+     <Compile Include="Assets\Scripts\Game\TouchInputManager.cs" />
      <Compile Include="Assets\Scripts\Game\VanessaCameraMovement.cs" />
-     <Compile Include="Assets\Scripts\ItemSingleInteraction.cs" />
-     <Compile Include="Assets\Scripts\LookAtDialogManager.cs" />
      <Compile Include="Assets\Scripts\Menu\AnimationRobo.cs" />
      <Compile Include="Assets\Scripts\Menu\NavigationMenu.cs" />
-     <Compile Include="Assets\Scripts\MoveCharacterController.cs" />
-     <Compile Include="Assets\Scripts\MusicPlayingController.cs" />
-     <Compile Include="Assets\Scripts\PlayerCharacterController.cs" />
-     <Compile Include="Assets\Scripts\SceneNameManager.cs" />
-     <Compile Include="Assets\Scripts\SwitchCharacterController.cs" />
-     <Compile Include="Assets\Scripts\TouchInputManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

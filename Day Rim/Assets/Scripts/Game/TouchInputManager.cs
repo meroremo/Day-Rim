@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TouchInputManager : MonoBehaviour
 {
@@ -29,11 +30,12 @@ public class TouchInputManager : MonoBehaviour
 
 	void Start () 
     {
+        SceneNameManager.lastIngameScene = SceneManager.GetActiveScene().name;
         ActiveGameMode.GAMEMODE = ActiveGameMode.GameModes.INGAME;
 
         switchCharacterController = CharacterController.GetComponent<SwitchCharacterController>();
         dialogSceneManager = this.GetComponent<DialogSceneManager>();
-        infoText.text = "";
+        infoText.text = "ICH BIN DA";
 
         SetInteraction(false, false, false);
 	}
@@ -67,13 +69,16 @@ public class TouchInputManager : MonoBehaviour
     {
         if (!EventSystem.current.IsPointerOverGameObject(touch.fingerId))
         {
+            Debug.Log("NUMMER 1");
             if (Physics.Raycast(ray, out rayHit, Mathf.Infinity))
             {
                 GameObject hitObject = rayHit.transform.gameObject;
                 selectedObject = hitObject;
+                Debug.Log(hitObject.tag);
 
                 if (hitObject.tag == "ActiveCharacter" || hitObject.tag == "NPC")
                 {
+                    Debug.Log("FELIX ODER FELI");
                     lookPosition.x -= 30;
                     lookPosition.y += 30;
 
@@ -190,7 +195,7 @@ public class TouchInputManager : MonoBehaviour
         infoText.text = "";
     }
 
-    public void OpenInventory()
+  /*  public void OpenInventory()
     {
         ActiveGameMode.GAMEMODE = ActiveGameMode.GameModes.INVENTORY;
         Debug.Log(ActiveGameMode.GAMEMODE);
@@ -206,5 +211,5 @@ public class TouchInputManager : MonoBehaviour
 
         // Menu öffnen
             // Beim Schließen des Menüs den GameMode wieder ändern!
-    }
+    }*/
 }

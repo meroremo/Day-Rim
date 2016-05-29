@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class DialogSceneManager : MonoBehaviour 
 {
@@ -7,13 +8,13 @@ public class DialogSceneManager : MonoBehaviour
     {
         ActiveGameMode.GAMEMODE = ActiveGameMode.GameModes.DIALOG;
         Debug.Log(ActiveGameMode.GAMEMODE);
-        Application.LoadLevel("YasminDummyDialogScene");
+        SceneManager.LoadScene("DialogScene");
     }
 
     public void leaveDialogScene()
     {
         ActiveGameMode.GAMEMODE = ActiveGameMode.GameModes.INGAME;
         Debug.Log(ActiveGameMode.GAMEMODE);
-        Application.LoadLevel("YasminDummyInteraction");
+        SceneManager.LoadScene(SceneNameManager.lastIngameScene);
     }
 }
