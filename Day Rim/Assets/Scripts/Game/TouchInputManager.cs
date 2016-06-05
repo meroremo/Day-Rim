@@ -74,7 +74,18 @@ public class TouchInputManager : MonoBehaviour
             {
                 GameObject hitObject = rayHit.transform.gameObject;
                 selectedObject = hitObject;
+
                 Debug.Log(hitObject.tag);
+                Debug.Log(hitObject.name);
+                
+                if(hitObject.name == "Felix")
+                {
+                    if (hitObject.tag != "NPC" && hitObject.tag != "ActiveCharacter")
+                    {
+                        if (ActiveCharacter.activeCharacter.name == "Feli")
+                            hitObject.tag = "NPC";
+                    }
+                }
 
                 if (hitObject.tag == "ActiveCharacter" || hitObject.tag == "NPC")
                 {

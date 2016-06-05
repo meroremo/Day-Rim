@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\Dialog\DialogSceneManager.cs" />
      <Compile Include="Assets\Scripts\Dialog\Dialog_Navigation.cs" />
+     <Compile Include="Assets\Scripts\Dialog\PrototypDialog.cs" />
      <Compile Include="Assets\Scripts\Game\ActiveCharacter.cs" />
      <Compile Include="Assets\Scripts\Game\ActiveGameMode.cs" />
      <Compile Include="Assets\Scripts\Game\BackgroundMusicManager.cs" />
