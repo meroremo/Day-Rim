@@ -223,4 +223,9 @@ public class TouchInputManager : MonoBehaviour
         // Menu öffnen
             // Beim Schließen des Menüs den GameMode wieder ändern!
     }*/
+
+    public void OpenDrawScene()
+    {
+        SceneManager.LoadScene("GameScene");
+    }
 }
