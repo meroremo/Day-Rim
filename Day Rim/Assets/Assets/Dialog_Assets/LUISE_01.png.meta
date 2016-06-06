@@ -1,0 +1,308 @@
+fileFormatVersion: 2
+guid: ab547d56bbd3ae2429d1e4a1b92c8da3
+timeCreated: 1465227997
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LUISE_01_0
+    21300002: LUISE_01_1
+    21300004: LUISE_01_2
+    21300006: LUISE_01_3
+    21300008: LUISE_01_4
+    21300010: LUISE_01_5
+    21300012: LUISE_01_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: LUISE_01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1219
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -135.5, y: -141}
+        - {x: -134.5, y: -144}
+        - {x: 146.5, y: -144}
+        - {x: 146.5, y: -139}
+        - {x: -133.5, y: -139}
+      - - {x: 34.5, y: -101}
+        - {x: 136.5, y: -44}
+        - {x: 140.5, y: -9}
+        - {x: 140.5, y: 77}
+        - {x: 101.5, y: 113}
+        - {x: 36.5, y: 133}
+        - {x: -18.5, y: 133}
+        - {x: -83.5, y: 119}
+        - {x: -131.5, y: 63}
+        - {x: -131.5, y: -16}
+        - {x: -103.5, y: -70}
+        - {x: -30.5, y: -81}
+        - {x: -46.5, y: -108}
+        - {x: -51.5, y: -121}
+        - {x: -17.5, y: -139}
+        - {x: 17.5, y: -139}
+        - {x: 30.5, y: -133}
+        - {x: 50.5, y: -123}
+        - {x: 52.5, y: -110}
+        - {x: 42.5, y: -103}
+    - name: LUISE_01_1
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 0
+        width: 1219
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -142.44, y: 144}
+        - {x: -146.44, y: -97}
+        - {x: -146.44, y: -144}
+        - {x: -140.44, y: -144}
+        - {x: -137.44, y: -141}
+        - {x: -137.44, y: 143}
+        - {x: -139.44, y: 145}
+      - - {x: 129.56, y: -49}
+        - {x: 136.56, y: -11}
+        - {x: 136.56, y: 77}
+        - {x: 99.56, y: 113}
+        - {x: 47.559998, y: 128}
+        - {x: 22.559998, y: 133}
+        - {x: -21.440002, y: 133}
+        - {x: -93.44, y: 111}
+        - {x: -134.44, y: 63}
+        - {x: -134.44, y: -13}
+        - {x: -111.44, y: -69}
+        - {x: -48.440002, y: -77}
+        - {x: -55.440002, y: -115}
+        - {x: -32.440002, y: -132}
+        - {x: -20.440002, y: -139}
+        - {x: 13.559998, y: -139}
+        - {x: 53.559998, y: -123}
+        - {x: 49.559998, y: -111}
+        - {x: 40.559998, y: -102}
+        - {x: 59.559998, y: -78}
+    - name: LUISE_01_2
+      rect:
+        serializedVersion: 2
+        x: 2438
+        y: 0
+        width: 1219
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 139.62, y: -145}
+        - {x: 141.62, y: -147}
+        - {x: 144.62, y: -146}
+        - {x: 144.62, y: 139}
+        - {x: 142.62, y: 141}
+        - {x: 139.62, y: 140}
+      - - {x: 133.62, y: -19}
+        - {x: 133.62, y: 68}
+        - {x: 114.619995, y: 94}
+        - {x: 80.619995, y: 113}
+        - {x: 24.619995, y: 134}
+        - {x: -36.380005, y: 134}
+        - {x: -87.380005, y: 116}
+        - {x: -136.38, y: 65}
+        - {x: -137.38, y: 63}
+        - {x: -137.38, y: -22}
+        - {x: -135.38, y: -34}
+        - {x: -104.380005, y: -66}
+        - {x: -26.380005, y: -87}
+        - {x: -62.380005, y: -118}
+        - {x: -47.380005, y: -127}
+        - {x: -21.380005, y: -140}
+        - {x: 7.619995, y: -140}
+        - {x: 46.619995, y: -125}
+        - {x: 51.619995, y: -110}
+        - {x: 57.619995, y: -80}
+        - {x: 112.619995, y: -62}
+    - name: LUISE_01_3
+      rect:
+        serializedVersion: 2
+        x: 3657
+        y: 0
+        width: 1219
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 107.67999, y: -62}
+        - {x: 131.68, y: -19}
+        - {x: 131.68, y: 77}
+        - {x: 84.67999, y: 117}
+        - {x: 26.679993, y: 134}
+        - {x: -21.320007, y: 134}
+        - {x: -90.32001, y: 119}
+        - {x: -139.32, y: 65}
+        - {x: -139.32, y: -7}
+        - {x: -138.32, y: -17}
+        - {x: -108.32001, y: -66}
+        - {x: -23.320007, y: -91}
+        - {x: -53.320007, y: -110}
+        - {x: -56.320007, y: -116}
+        - {x: -43.320007, y: -138}
+        - {x: 32.679993, y: -138}
+        - {x: 43.679993, y: -118}
+        - {x: 42.679993, y: -107}
+        - {x: 35.679993, y: -101}
+    - name: LUISE_01_4
+      rect:
+        serializedVersion: 2
+        x: 4876
+        y: 0
+        width: 1219
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.73999, y: -85}
+        - {x: 54.73999, y: -79}
+        - {x: 123.73999, y: -41}
+        - {x: 126.73999, y: -1}
+        - {x: 126.73999, y: 70}
+        - {x: 85.73999, y: 107}
+        - {x: 37.73999, y: 128}
+        - {x: 16.73999, y: 134}
+        - {x: -37.26001, y: 134}
+        - {x: -93.26001, y: 115}
+        - {x: -144.26001, y: 67}
+        - {x: -144.26001, y: -11}
+        - {x: -143.26001, y: -17}
+        - {x: -112.26001, y: -68}
+        - {x: -61.26001, y: -88}
+        - {x: -66.26001, y: -140}
+        - {x: 14.73999, y: -140}
+        - {x: 37.73999, y: -123}
+        - {x: 39.73999, y: -112}
+        - {x: 30.73999, y: -104}
+    - name: LUISE_01_5
+      rect:
+        serializedVersion: 2
+        x: 6095
+        y: 0
+        width: 1219
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 141.79993, y: -141}
+        - {x: 142.79993, y: -144}
+        - {x: 147.79993, y: -144}
+        - {x: 147.79993, y: -139}
+        - {x: 143.79993, y: -139}
+      - - {x: 79.79993, y: -66}
+        - {x: 120.79993, y: -39}
+        - {x: 127.79993, y: -2}
+        - {x: 127.79993, y: 66}
+        - {x: 90.79993, y: 107}
+        - {x: 28.799927, y: 134}
+        - {x: -28.200073, y: 134}
+        - {x: -40.200073, y: 132}
+        - {x: -93.20007, y: 114}
+        - {x: -144.20007, y: 69}
+        - {x: -144.20007, y: -13}
+        - {x: -114.20007, y: -73}
+        - {x: -58.200073, y: -78}
+        - {x: -61.200073, y: -124}
+        - {x: -31.200073, y: -140}
+        - {x: 3.7999268, y: -140}
+        - {x: 44.799927, y: -123}
+        - {x: 41.799927, y: -107}
+        - {x: 8.799927, y: -84}
+        - {x: 57.799927, y: -79}
+    - name: LUISE_01_6
+      rect:
+        serializedVersion: 2
+        x: 7314
+        y: 0
+        width: 1219
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -146.14001, y: -144}
+        - {x: 129.85999, y: -144}
+        - {x: 131.85999, y: -142}
+        - {x: 130.85999, y: -139}
+        - {x: -146.14001, y: -139}
+      - - {x: 123.859985, y: -29}
+        - {x: 123.859985, y: 68}
+        - {x: 89.859985, y: 107}
+        - {x: 29.859985, y: 132}
+        - {x: 20.859985, y: 133}
+        - {x: -34.140015, y: 133}
+        - {x: -95.140015, y: 115}
+        - {x: -146.14001, y: 68}
+        - {x: -146.14001, y: -18}
+        - {x: -119.140015, y: -74}
+        - {x: -64.140015, y: -79}
+        - {x: -30.140015, y: -82}
+        - {x: -68.140015, y: -109}
+        - {x: -47.140015, y: -139}
+        - {x: 2.8599854, y: -139}
+        - {x: 42.859985, y: -121}
+        - {x: 32.859985, y: -104}
+        - {x: 44.859985, y: -79}
+        - {x: 94.859985, y: -58}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
