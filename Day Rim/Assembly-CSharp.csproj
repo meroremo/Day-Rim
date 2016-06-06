@@ -38,14 +38,14 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>D:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\Camera\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\Dialog\DialogSceneManager.cs" />
      <Compile Include="Assets\Scripts\Dialog\Dialog_Navigation.cs" />
      <Compile Include="Assets\Scripts\Dialog\PrototypDialog.cs" />
@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\Game\BackgroundMusicManager.cs" />
      <Compile Include="Assets\Scripts\Game\CanvasNavigator.cs" />
      <Compile Include="Assets\Scripts\Game\DetectTouches.cs" />
+     <Compile Include="Assets\Scripts\Game\DrawLine.cs" />
      <Compile Include="Assets\Scripts\Game\ItemSingleInteraction.cs" />
      <Compile Include="Assets\Scripts\Game\LookAtDialogManager.cs" />
      <Compile Include="Assets\Scripts\Game\MoveCharacterController.cs" />
@@ -66,10 +67,10 @@
      <Compile Include="Assets\Scripts\Menu\AnimationRobo.cs" />
      <Compile Include="Assets\Scripts\Menu\NavigationMenu.cs" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
