@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Szenen/ScreenRotationDummy.unity
+- path: Assets/Szenen/GameScene.unity
   isLoaded: 1
   isActive: 1
